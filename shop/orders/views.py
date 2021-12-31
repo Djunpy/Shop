@@ -4,7 +4,6 @@ from .forms import OrderCreateForm
 from cart.cart import Cart
 from .task import order_created
 
-
 def order_create(request):
     cart = Cart(request)
     if request.method == 'POST':
